@@ -92,3 +92,16 @@ During this stage, standard cells are placed in the lines of the floorplan, in s
 
 In floorplan stage, decoupling capacitances are placed at standard cell boundaries. Tap cells and I/O pads are also placed.  During placement, standard cells are placed.
 
+## Magic layout of Library Cell and SPICE characterisation
+
+Copy the .tech file into the directory of the library cell.
+
+<img width="1288" alt="Screenshot 2022-08-06 at 17 30 44" src="https://user-images.githubusercontent.com/61197146/183248531-05c22f43-2940-4110-a56b-8705ca9a1d3c.png">
+
+`magic -T sky130A.tech sky130_inv.mag &`
+
+![Screenshot 2022-08-06 at 17 46 42](https://user-images.githubusercontent.com/61197146/183248579-4c43c78c-4537-4c0b-9365-981ec4c47b90.png)
+
+<img width="692" alt="Screenshot 2022-08-06 at 17 42 28" src="https://user-images.githubusercontent.com/61197146/183248590-a966ad4a-b3af-4755-a5a8-d8f90906ddf8.png">
+
+.ext file is created in the library cell directory on running `extract all` and .spice file is created after `ext2spice` is run.
