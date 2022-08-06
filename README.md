@@ -78,4 +78,17 @@ Magic opens with the floorplan as shown-
 
 The tkcon window can help us get information such as which metal layer a given component belongs to, to help us verify this against our input parameter (such as metal layer set in io horiz metal). Decap cells and tap cells (to avoid latchup) are observed, with all standard cells being kept in the bottom left corner in layout.
 
+<img width="963" alt="Screenshot 2022-08-06 at 16 50 47" src="https://user-images.githubusercontent.com/61197146/183247077-5e50dd70-2fc4-4a28-95ab-d767d6fb4601.png">
+
 ### Placement
+
+During this stage, standard cells are placed in the lines of the floorplan, in standard cell rows. Placement is done in 2 stages- global and detailed. 
+
+`run_placement`
+
+<img width="1203" alt="Screenshot 2022-08-06 at 16 57 44" src="https://user-images.githubusercontent.com/61197146/183247145-91206c03-de61-41f1-868f-6d6325f50c25.png">
+
+<img width="1311" alt="Screenshot 2022-08-06 at 16 58 49" src="https://user-images.githubusercontent.com/61197146/183247147-c60cf974-43d1-4988-bc39-bff3325de878.png">
+
+In floorplan stage, decoupling capacitances are placed at standard cell boundaries. Tap cells and I/O pads are also placed.  During placement, standard cells are placed.
+
